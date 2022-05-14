@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Enter Leasing data</h1>
+<form method="post">
+    {% csrf_token %}
+<table>
+
+    <tr>
+        <td>container_id</td>
+        <td><input type="number" name="container_id"></td>
+    </tr>
+    <tr>
+        <td>container_type</td>
+        <td><input type="text" name="container_type"></td>
+    </tr>
+    <tr>
+        <td>container_history</td>
+        <td><input type="text" name="container_history"></td>
+    </tr>
+    <tr>
+        <td>rate</td>
+        <td><input type="number" name="rate"></td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="update"></td>
+    </tr>
+
+</table>
+</form>
+</body>
+</html>

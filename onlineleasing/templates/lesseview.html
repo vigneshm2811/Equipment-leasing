@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesse View</title>
+</head>
+<style>
+table, th,td {
+  border:1px solid gray;
+}
+</style>
+<body>
+<h2>Available Containers</h2>
+<table>
+  <tr>
+    <th>Container id</th>
+    <th>Container type</th>
+    <th>container History</th>
+    <th>Rate</th>
+    <th>Book Now</th>
+  </tr>
+
+  {% for i in value %}
+
+  <tr>
+    <td>{{i.id}}</td>
+    <td>{{i.container_type}}</td>
+    <td>{{i.container_history}}</td>
+    <td>{{i.rate}}</td>
+    <td><a href="/orderlesse/">order now</a> </td>
+  </tr>
+  {% endfor %}
+
+</table>
+
+</body>
+</html>
